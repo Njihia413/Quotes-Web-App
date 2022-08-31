@@ -43,3 +43,34 @@
     background-size: cover;
     height: 100vh;
 }
+
+.intro h1 {
+    font-size: 3.1em;
+    color: #343434;
+    font-weight: 900;
+    text-transform: capitalize;
+    font-family: "Merienda", cursive;
+}
+
+.homepage-intro p {
+    font-weight: 500;
+}
+
+.text-italic {
+    font-style: italic;
+    font-size: 13px;
+}
+  
+a {
+    text-decoration: none;
+}
+  
+p {
+    color: #4b4b4b;
+    line-height: 1.5em;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.author {
+    font-family: "Pacifico", cursive;
+}

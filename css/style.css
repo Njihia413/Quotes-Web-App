@@ -74,3 +74,79 @@ p {
 .author {
     font-family: "Pacifico", cursive;
 }
+
+/*Quote card section*/
+.icon {
+    background: #0000 none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #ebae08;
+    border: 1px solid #5e5757;
+    display: block;
+    font-size: 28px;
+    float: none;
+    height: 70px;
+    line-height: 32px;
+    margin: 0 auto;
+    padding: 18px;
+    width: 70px;
+}
+
+#card {
+   background: #fff none repeat scroll 0 0;
+   border: 2px solid #fff;
+   box-shadow: 0 0 11px 5px rgb(103 58 183 / 10%);
+   margin-bottom: 1px;
+   margin-top: 0px;
+   margin-inline: 10px;
+   padding: 1px 1px;
+   text-align: center;
+   transition: all 300ms ease-in-out;
+   -webkit-transition: all 300ms ease-in-out;
+   position: relative;
+   min-width: 350px;
+   overflow: hidden;
+} 
+
+#card:hover {
+    box-shadow: 0 0 11px 5px rgba(70, 41, 121, 0.25);
+    background: linear-gradient(-19deg, rgba(235, 174, 8, 0.95) 0px);
+}
+
+span {
+    font-weight: bold;
+}
+
+.like-button {
+    color: rgb(255, 127, 80);
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    transition: color 300ms;
+    cursor: pointer;
+  }
+  
+.like-button:hover {
+    color: rgb(241, 71, 19);
+}
+  
+.like-button:active {
+    color: rgb(253, 159, 124);
+}
+  
+.like-button:focus {
+    outline: none;
+}
+
+.fa-trash {
+    color: red;
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}

@@ -111,3 +111,28 @@ function updateLikes(quoteObj) {
     .then(response => response.json())
     .then(quote => console.log(quote));
 }
+
+//Success Message Trigger
+const successMessage = document.getElementById("successMessage");
+
+const alert = (message, type) => {
+    const wrapper = document.createElement("div");
+    wrapper.innerHTML = [
+        `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '</div>'
+    ].join('')
+    successMessage.append(wrapper);
+}
+
+const successAlertTrigger = document.getElementById("add");
+if(successAlertTrigger) {
+    successAlertTrigger.addEventListener("click", () => {
+        alert("Quote created successfully 😎. Scroll down to view the created quote", "success")
+    })
+}
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    fetchQuoteDetails();
+})

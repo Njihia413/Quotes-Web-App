@@ -52,6 +52,7 @@ function renderQuoteDetails (quote) {
         </p>
         <i class="fa fa-trash"></i>
     </div>`
+
     
     //Add Quote Likes
     quoteCard.querySelector("#like-button").addEventListener("click", () => {
@@ -59,6 +60,7 @@ function renderQuoteDetails (quote) {
         quoteCard.querySelector(".quote-count").innerHTML = quote.likes;
         updateLikes(quote);
     })
+
 
     //Delete quote card
     quoteCard.querySelector(".fa-trash").addEventListener("click", () => {
@@ -70,4 +72,17 @@ function renderQuoteDetails (quote) {
 
     //Add quotes card to DOM
     quoteSection.appendChild(quoteCard);
+}
+
+//Create a New Quote and Update on Server Side
+function createQuote(quoteObj) {
+    fetch(`${quotesUrl}`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(quoteObj)
+    })
+    .then(response => response.json())
+    .then(quote => console.log(quote));
 }

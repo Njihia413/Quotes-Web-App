@@ -125,12 +125,30 @@ const alert = (message, type) => {
     successMessage.append(wrapper);
 }
 
+
 const successAlertTrigger = document.getElementById("add");
 if(successAlertTrigger) {
     successAlertTrigger.addEventListener("click", () => {
         alert("Quote created successfully 😎. Scroll down to view the created quote", "success")
     })
 }
+
+
+//Disable and Enable Quote Form Button
+const input = document.querySelector(".form-control");
+const quoteFormBtn = document.getElementById("add");
+
+quoteFormBtn.disabled = true;
+
+input.addEventListener("change", changeBtnState);
+
+function changeBtnState() {
+    if(document.querySelector(".form-control").value === "") {
+        quoteFormBtn.disabled = true;
+    } else {
+        quoteFormBtn.disabled = false;
+    }
+} 
 
 
 document.addEventListener("DOMContentLoaded", function () {

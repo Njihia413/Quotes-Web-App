@@ -35,6 +35,13 @@ function renderQuoteDetails (quote) {
         </p>
         <i class="fa fa-trash"></i>
     </div>`
+    
+    //Add Quote Likes
+    quoteCard.querySelector("#like-button").addEventListener("click", () => {
+        quote.likes += 1;
+        quoteCard.querySelector(".quote-count").innerHTML = quote.likes;
+        updateLikes(quote);
+    })
 
     //Add quotes card to DOM
     quoteSection.appendChild(quoteCard);

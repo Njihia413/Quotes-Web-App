@@ -50,6 +50,66 @@
                 </div>   
             </div>
         </section>
+
+        <!--Quotes Section-->
+        <div class="quotes mt-5 mb-5" id="quotes-container">
+            <div class="text-center">
+                <h1 class="color-primary text-uppercase">quotes</h1>
+                <p class="container">
+                    Life is a beautiful journey that is meant to be embraced to the fullest every day. However, that doesn't mean you
+                    always wake up ready to seize the day, and sometimes need a reminder that <span class="color-primary">life</span>
+                    is a great <span class="color-primary">gift.</span>
+                </p>
+                <a class="btn bg-yellow mt-2 text-center" id="quoteBtn" data-bs-toggle="modal" data-bs-target="#createQuote">Create Quote <i class="fa-solid fa-plus"></i></a>
+                <div class="container mt-3" id="danger">
+                    <div class="alert alert-danger" role="alert">
+                        Quote deleted😥!
+                    </div>
+                </div>
+
+                <!-- Create Quote Modal -->
+                <div class="modal fade" id="createQuote" tabindex="-1" aria-labelledby="quoteFormLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center" id="quoteFormLabel">CREATE YOUR QUOTE</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div id="successMessage"></div>
+                            <div class="modal-body">
+                                <p class="text-italic">Fill in all the fields to create a quote</p>
+                                <form id="quote-form" class="needs-validation">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-3">
+                                            <input type="text" class="form-control" name="author" placeholder="Enter author..." required>
+                                            <div class="invalid-feedback">Author field cannot be empty!</div>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <input type="text" class="form-control" name="category" placeholder="Enter category..." required>
+                                            <div class="invalid-feedback">Fill in the category!</div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <textarea name="quote" id="quote" cols="3" rows="3" class="form-control" placeholder="Enter quote..." required></textarea>
+                                            <div class="invalid-feedback">Enter the quote!</div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-lg bg-yellow" id="add">Add</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="container">
+                    <div class="card-group">
+                        <!--Quotes in here-->
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <script src="src/index.js" async defer></script>
     </body>

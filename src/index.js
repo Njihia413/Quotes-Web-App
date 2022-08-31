@@ -43,6 +43,14 @@ function renderQuoteDetails (quote) {
         updateLikes(quote);
     })
 
+    //Delete quote card
+    quoteCard.querySelector(".fa-trash").addEventListener("click", () => {
+        quoteCard.remove();
+        const dangerAlert = document.getElementById("danger");
+        dangerAlert.style.display = "block"  //Display deleted message
+        deleteQuote(quote.id);
+    })
+
     //Add quotes card to DOM
     quoteSection.appendChild(quoteCard);
 }

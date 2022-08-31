@@ -1,5 +1,22 @@
 const quotesUrl = "http://localhost:3000/quotes";
 
+const quoteForm = document.querySelector("#quote-form")
+console.log(quoteForm)
+quoteForm.addEventListener("submit", handleFormSubmit)
+
+function handleFormSubmit (event) {
+    event.preventDefault();
+    let quoteObj = {
+        quote: event.target.quote.value,
+        author: event.target.author.value,
+        category: event.target.category.value,
+        likes: 0
+    }
+    event.target.reset(); //Reset the form
+    renderQuoteDetails(quoteObj);
+    createQuote(quoteObj);
+}
+
 //Fetch Quote Details
 function fetchQuoteDetails () {
     return fetch(quotesUrl)

@@ -86,3 +86,15 @@ function createQuote(quoteObj) {
     .then(response => response.json())
     .then(quote => console.log(quote));
 }
+
+//Delete Quote From Server Function
+function deleteQuote(id) {
+    fetch (`${quotesUrl}/${id}`, {
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/json"
+        }
+    })
+    .then(response => response.json())
+    .then(quote => console.log(quote));
+}

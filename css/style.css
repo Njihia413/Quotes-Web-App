@@ -1,0 +1,45 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.row {
+    --bs-gutter-x: -0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+
+.float-center {
+    text-align: center;
+}
+
+.color-primary {
+    color: rgb(235, 174, 8);
+  }
+  
+.bg-yellow {
+    background-color: rgb(235, 174, 8);
+    color: white;
+}
+
+.bg-yellow:hover {
+    color: rgb(235, 174, 8);
+}
+
+.home-img {
+    background-image: url("https://cdn.pixabay.com/photo/2018/11/01/00/55/animal-3786987_960_720.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}

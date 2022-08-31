@@ -1,0 +1,41 @@
+const quotesUrl = "http://localhost:3000/quotes";
+
+//Fetch Quote Details
+function fetchQuoteDetails () {
+    return fetch(quotesUrl)
+    .then(response => response.json())
+}
+
+fetchQuoteDetails().then(quotes => {
+    quotes.forEach((quote => {
+        renderQuoteDetails(quote);
+    }))
+})
+
+//Display Quotes
+function renderQuoteDetails (quote) {
+    const quoteSection = document.querySelector(".card-group");
+    const quoteCard = document.createElement("div");
+    quoteCard.className= "card mt-5";
+    quoteCard.id = "card"
+    quoteCard.innerHTML = `
+    <div class="card-body">
+        <div class="icon">
+            <i class="fa-solid fa-quote-right"></i>
+        </div>
+        <h3>"${quote.quote}"</h3>
+        <p>
+            <span> Author: </span>${quote.author}
+        </p>
+        <p>
+            <span> Category: </span>${quote.category}</p>
+        <p>
+            <button id="like-button" class="like-button">♥</button>
+            <span class="quote-count">${quote.likes}</span> likes
+        </p>
+        <i class="fa fa-trash"></i>
+    </div>`
+
+    //Add quotes card to DOM
+    quoteSection.appendChild(quoteCard);
+}

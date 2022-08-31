@@ -98,3 +98,16 @@ function deleteQuote(id) {
     .then(response => response.json())
     .then(quote => console.log(quote));
 }
+
+//Update Quote Likes on Server Side
+function updateLikes(quoteObj) {
+    fetch (`${quotesUrl}/${quoteObj.id}`, {
+        method: "PATCH",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(quoteObj)
+    })
+    .then(response => response.json())
+    .then(quote => console.log(quote));
+}

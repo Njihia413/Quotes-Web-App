@@ -51,9 +51,8 @@ json-server --watch db.json
 ![Quote form submission](assets/Quote-modal.jpg)
 * After Deleting a Quote
 ![Delete quote](assets/Delete-alert.jpg)
-
-* Fully Phone Responsive
 ![Responsive](assets/Responsive.jpg)
+* Fully Phone Responsive
 # Known Bugs
 There are no known bugs of this project at the moment 😎
 # Support and contact details

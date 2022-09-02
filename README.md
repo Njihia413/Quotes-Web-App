@@ -35,7 +35,7 @@ npm install -g json-server
 json-server --watch db.json
 ```
 * To view the server, navigate to http://localhost:3000/quotes
-* To run the application, oprn the `index.html` file on your browser.
+* To run the application, open the `index.html` file on your browser using a suitable code editor ie https://code.visualstudio.com/
 # Technologies Used
 * HTML5
 * CSS3
@@ -43,17 +43,25 @@ json-server --watch db.json
 # Some Screenshots
 * Homepage
 ![Homepage Image](assets/Home-img.jpg)
+<br />
+
 * Quotes Section
 ![Quotes Container](assets/Quotes-Container.jpg)
+<br />
+
 * Create Quote Modal Form
 ![Quote form](assets/Quote-form.jpg)
+<br />
+
 * After submitting the form
 ![Quote form submission](assets/Quote-modal.jpg)
+<br />
+
 * After Deleting a Quote
 ![Delete quote](assets/Delete-alert.jpg)
 
 # Known Bugs
-There are no known bugs of this project at the moment 😎
+There are no known bugs of this project at the moment 😎.
 # Support and contact details
 For any contributions towards this project:
 * Email: developer.njihia@gmail.com

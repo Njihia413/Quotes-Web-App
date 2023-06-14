@@ -16,15 +16,15 @@ Moringa Phase 1 Independent Project on a Quotes website that allows users to:
 # Setup Installation
 * Copy the link of this repository
 ```
-https://github.com/Njihia413/Phase-1-Project.git
+https://github.com/Njihia413/Quotes-Web-App.git
 ```
 * Clone it to your local machine
 ```
-git clone https://github.com/Njihia413/Phase-1-Project.git
+git clone https://github.com/Njihia413/Quotes-Web-App.git
 ```
 * Open terminal and navigate to the directory of the project
 ```
-cd Phase-1-Project
+cd Quotes-Web-App
 ```
 * Run the following command to install the JSON Server
 ```

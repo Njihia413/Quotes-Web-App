@@ -1,4 +1,4 @@
-const quotesUrl = "http://localhost:3000/quotes";
+const quotesUrl = "https://quotes-json-server-vercel.vercel.app/quotes";
 
 const quoteForm = document.querySelector("#quote-form")
 console.log(quoteForm)

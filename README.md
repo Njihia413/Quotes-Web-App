@@ -1,4 +1,4 @@
-# Quotes Website
+# Quotes Web App
 # Contributors of this Project
 ## By Maureen Njihia on 1st September 2022
 # Description
@@ -40,6 +40,9 @@ json-server --watch db.json
 * HTML5
 * CSS3
 * Bootstrap 5.2
+# Live Links
+* Quotes Backend Link: https://quotes-json-server-vercel.vercel.app/quotes
+* Quotes Web App Frontend Link: https://quotes-web-app-fawn.vercel.app/
 # Some Screenshots
 * Homepage
 ![Homepage Image](assets/Home-img.jpg)
